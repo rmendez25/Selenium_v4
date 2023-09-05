@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regression">
+    <test name="HomePage Tests" parallel="none">
+        <classes>
+            <class name="com.framework.test.HomeTest"/>
+        </classes>
+    </test>
+    <test name="LoginPage Tests" parallel="none">
+        <classes>
+            <class name="com.framework.test.LoginTest"/>
+        </classes>
+    </test>
+    <listeners>
+        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+    </listeners>
+</suite>
